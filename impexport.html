@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SHAKTI IMPORT & EXPORT</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: #f4f7fb;
+        color: #333;
+    }
+
+    /* SMALL, CLEAN HEADER */
+    header {
+        background: #ffffff;
+        padding: 8px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    /* LOGO + TITLE AREA */
+    .brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .brand img {
+        height: 45px;    /* small clean logo */
+        margin-right: 12px;
+    }
+
+    .brand-name {
+        font-size: 22px;
+        font-weight: 700;
+        color: #0a2a43;
+        letter-spacing: 1px;
+    }
+
+    /* NAVIGATION */
+    nav a {
+        text-decoration: none;
+        margin-left: 22px;
+        color: #0a2a43;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    nav a:hover {
+        color: #ff6a33;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        margin-top: 75px;
+        height: 88vh;
+        background: linear-gradient(to right, rgba(0,61,88,0.7), rgba(255,94,0,0.7)),
+        url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+
+    .hero-logo {
+        height: 120px;
+        margin: 0 auto 15px auto;
+        filter: drop-shadow(0 4px 10px rgba(0,0,0,0.45));
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .hero p {
+        font-size: 20px;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    /* SECTION STYLING */
+    section {
+        padding: 60px 50px;
+        text-align: center;
+    }
+
+    h2 {
+        color: #0a2a43;
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 18px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    /* SERVICES SECTION */
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .service-box {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 5px 16px rgba(0,0,0,0.12);
+        transition: 0.3s;
+    }
+
+    .service-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    }
+
+    .service-box h3 {
+        color: #0a2a43;
+        font-size: 22px;
+    }
+
+    /* CONTACT BUTTONS */
+    .contact-buttons a {
+        display: inline-block;
+        margin: 10px;
+        padding: 15px 25px;
+        background: #0a2a43;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .contact-buttons a:hover {
+        background: #ff5a1f;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #0a2a43;
+        color: white;
+        text-align: center;
+        padding: 18px;
+        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+        .hero h1 { font-size: 32px; }
+        .hero p { font-size: 16px; }
+        header { padding: 10px 20px; }
+        .brand img { height: 38px; }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="brand">
+        <img src="logo.png" alt="Shakti Logo">
+        <div class="brand-name">SHAKTI IMPORT & EXPORT</div>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<div class="hero" id="home">
+    <img src="logo.png" class="hero-logo" alt="Shakti Logo">
+    <h1>Connecting the World Through Trade</h1>
+    <p>Reliable global import & export services supported by strong logistics and trusted partnerships.</p>
+</div>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        <b>SHAKTI IMPORT & EXPORT</b> is a global trading company dedicated to delivering premium
+        import and export solutions with complete transparency and reliability.
+    </p>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+        <div class="service-box">
+            <h3>🌍 Global Trading</h3>
+            <p>International import & export with complete documentation and support.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>📦 Product Sourcing</h3>
+            <p>We source high-quality products directly from trusted global suppliers.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>🚢 Logistics & Shipping</h3>
+            <p>Secure and fast shipping by sea and air with full tracking.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>🤝 Long-Term Partnerships</h3>
+            <p>We build relationships based on trust and consistent service quality.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>For inquiries or business partnerships, get in touch with us below.</p>
+
+    <div class="contact-buttons">
+        <a href="https://wa.me/yourNumber" target="_blank">💬 WhatsApp</a>
+        <a href="tel:+91XXXXXXXXXX">📞 Call Us</a>
+        <a href="mailto:yourmail@example.com">📧 Email</a>
+    </div>
+</section>
+
+<footer>
+    © 2025 SHAKTI IMPORT & EXPORT • All Rights Reserved
+</footer>
+
+</body>
+</html>
